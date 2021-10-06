@@ -1,4 +1,4 @@
-# Welcome!
+# Chapter 0: Welcome!
 
 ## Tasks
-- [ ] Read course syllabus.
+- [ ] Read course syllabus
