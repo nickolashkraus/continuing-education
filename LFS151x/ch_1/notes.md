@@ -3,6 +3,7 @@
 ## Tasks
 - [x] Add brief description of OpenStack
 - [x] Add brief description of a hypervisor
+- [ ] Pare down this file
 
 ## Introduction to Cloud Computing and Technologies
 

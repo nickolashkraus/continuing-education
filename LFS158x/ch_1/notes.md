@@ -1,7 +1,7 @@
 # Chapter 1: From Monolith to Microservices
 
 ## Tasks
-- [x] None
+- [ ] Pare down this file
 
 ## The Legacy Monolith
 
