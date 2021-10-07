@@ -2,3 +2,4 @@
 
 - [x] Chapter 0: Welcome!
 - [x] Chapter 1: The Linux Foundation
+- [x] Chapter 2: Linux Philosophy and Concepts
