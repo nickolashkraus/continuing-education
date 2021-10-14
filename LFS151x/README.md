@@ -4,3 +4,4 @@
 - [x] Chapter 1: Virtualization
 - [x] Chapter 2: Infrastructure as a Service (IaaS)
 - [x] Chapter 3: Platform as a Service (PaaS)
+- [x] Chapter 4: Containers
