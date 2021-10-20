@@ -29,6 +29,8 @@
 * Level: Beginner
 * Price: $0
 
+---
+
 ### Blockchain
 
 [**LFS170x - Blockchain: Understanding Its Uses and Implications**](https://training.linuxfoundation.org/training/blockchain-understanding-its-uses-and-implications)
@@ -69,6 +71,8 @@
 * Price: $299
 
 **NOTE**: This course is recommended for those pursuing the Certified Hyperledger Fabric Administrator (CHFA) certification.
+
+---
 
 ### Cloud & Containers
 
@@ -232,6 +236,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Level: Beginner
 * Price: $299
 
+---
+
 ### DevOps & Site Reliability
 
 [**LFS162x - Introduction to DevOps and Site Reliability Engineering**](https://training.linuxfoundation.org/training/introduction-to-devops-and-site-reliability-engineering-lfs162)
@@ -281,6 +287,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Level: Beginner
 * Price: $1200
 
+---
+
 ### IoT & Embedded Development
 
 [**LFD110x - Introduction to RISC-V**](https://training.linuxfoundation.org/training/introduction-to-riscv-lfd110x)
@@ -309,6 +317,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Description: Learn how to build a repeatable embedded target Linux target using the Yocto Project.
 * Level: Advanced
 * Price: $3250
+
+---
 
 ### Linux Kernel Development
 
@@ -343,6 +353,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Description: Learn the methods and internal infrastructure of the Linux kernel.
 * Level: Advanced
 * Price: $3250
+
+---
 
 ### Networking
 
@@ -397,6 +409,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Description: Learn about the fundamentals of the Linux Foundation OPNFV project.
 * Level: Intermediate
 * Price: $299
+
+---
 
 ### Open Source Best Practice
 
@@ -457,6 +471,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Level: Beginner
 * Price: $499
 
+---
+
 ### System Administration
 
 [**LFS101x - System Administration Introduction to Linux**](https://training.linuxfoundation.org/training/introduction-to-linux)
@@ -503,6 +519,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Level: Intermediate
 * Price: $3250
 
+---
+
 ### Systems Engineering
 
 #### Instructor-Led
@@ -521,6 +539,8 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Description: Learn KVM from the ground up with a focus on QEMU and libvirt, as well as Xen.
 * Level: Advanced
 * Price: $3250
+
+---
 
 ### Web & Application Development
 
