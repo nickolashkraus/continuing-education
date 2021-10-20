@@ -28,6 +28,8 @@
 * Level: Intermediate
 * Price: $375
 
+---
+
 ### Cloud & Containers
 
 ![Kubernetes and Cloud Native Associate (KCNA)](./img/kcna.png)
@@ -72,6 +74,8 @@
 * Level: Beginner
 * Price: $250
 
+---
+
 ### DevOps & Site Reliability
 
 ![FinOps Certified Practitioner (FOCP)](./img/focp.png)
@@ -80,6 +84,8 @@
 * Description: FinOps, or "Cloud Financial Operations" is the practice of bringing financial accountability to the variable spend model of cloud, enabling distributed teams to make business trade-offs between speed, cost, and quality.
 * Level: Beginner
 * Price: $300
+
+---
 
 ### System Administration
 
@@ -97,6 +103,8 @@
 * Level: $375
 * Price: Intermediate
 
+---
+
 ### System Engineering
 
 ![Linux Foundation Certified Engineer (LFCE)](./img/lfce.png)
@@ -105,6 +113,8 @@
 * Description: The Linux Foundation Certified Engineer (LFCE) exam is designed for the Linux engineer looking to demonstrate a more advanced level of Linux administration and engineering skill.
 * Level: $375
 * Price: Advanced
+
+---
 
 ### Web & Application
 
