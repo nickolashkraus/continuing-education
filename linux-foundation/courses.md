@@ -276,7 +276,7 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 
 #### Bootcamps
 
-[DevOps Bootcamp](https://training.linuxfoundation.org/training/devops-bootcamp)
+[**DevOps Bootcamp**](https://training.linuxfoundation.org/training/devops-bootcamp)
 * Description: This program will prepare an absolute beginner to learn the most in-demand cloud computing skills in about 6 months.
 * Level: Beginner
 * Price: $1200
@@ -452,7 +452,7 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 
 #### Other
 
-[Open Source Management & Strategy](https://training.linuxfoundation.org/training/open-source-management-and-strategy)
+[**Open Source Management & Strategy**](https://training.linuxfoundation.org/training/open-source-management-and-strategy)
 * Description: This 7-module course series builds on the accumulated wisdom of many previous training modules on open source best practices, while adding fresh and updated content to explain all of the critical elements of working effectively with open source in your enterprise. The courses are designed to be self-paced, and reasonably high-level, but with enough detail to get new open source practitioners up and running quickly.
 * Level: Beginner
 * Price: $499
