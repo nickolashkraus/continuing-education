@@ -5,3 +5,4 @@
 - [x] Chapter 2: Linux Philosophy and Concepts
 - [x] Chapter 3: Linux Basics and System Startup
 - [x] Chapter 4: Graphical Interface
+- [x] Chapter 5: System Configuration from the Graphical Interface
