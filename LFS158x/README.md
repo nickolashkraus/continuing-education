@@ -5,3 +5,4 @@
 - [x] Chapter 2: Container Orchestration
 - [x] Chapter 3: Kubernetes
 - [x] Chapter 4: Kubernetes Architecture
+- [x] Chapter 5: Installing Kubernetes
