@@ -7,3 +7,4 @@
 - [x] Chapter 4: Graphical Interface
 - [x] Chapter 5: System Configuration from the Graphical Interface
 - [x] Chapter 6: Common Applications
+- [x] Chapter 7: Command Line Operations
