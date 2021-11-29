@@ -61,7 +61,7 @@ The boot loader loads both the **kernel** and an initial RAM–based file system
 
 ![The Linux Kernel](./img/img_6.png)
 
-When the kernel is loaded in RAM, it immediately initializes and configures the computer’s memory and also configures all the hardware attached to the system. This includes all processors, I/O subsystems, storage devices, etc. The kernel also loads some necessary user space applications.
+When the kernel is loaded in RAM, it immediately initializes and configures the computer's memory and also configures all the hardware attached to the system. This includes all processors, I/O subsystems, storage devices, etc. The kernel also loads some necessary user space applications.
 
 ## /sbin/init and Services
 

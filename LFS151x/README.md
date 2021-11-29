@@ -11,3 +11,4 @@
 - [x] Chapter 8: Microservices
 - [x] Chapter 9: Software-Defined Networking and Networking for Containers
 - [x] Chapter 10: Software-Defined Storage and Storage Management for Containers
+- [x] Chapter 11: DevOps and CI/CD

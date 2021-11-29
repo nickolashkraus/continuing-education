@@ -31,4 +31,4 @@ GNOME is a popular desktop environment with an easy-to-use graphical user interf
 
 ## Suspending
 
-All modern computers support **Suspend** (or **Sleep**) **Mode** when you want to stop using your computer for a while. Suspend Mode saves the current system state and allows you to resume your session more quickly while remaining on, but uses very little power in the sleeping state. It works by keeping your system’s applications, desktop, and so on, in system RAM, but turning off all of the other hardware.
+All modern computers support **Suspend** (or **Sleep**) **Mode** when you want to stop using your computer for a while. Suspend Mode saves the current system state and allows you to resume your session more quickly while remaining on, but uses very little power in the sleeping state. It works by keeping your system's applications, desktop, and so on, in system RAM, but turning off all of the other hardware.

@@ -57,7 +57,7 @@ The Debian distribution is upstream for several other distributions, including U
 
 Debian provides by far the largest and most complete software repository to its users of any Linux distribution.
 
-Ubuntu aims at providing a good compromise between long-term stability and ease of use. Since Ubuntu gets most of its packages from Debian’s stable branch, it also has access to a very large software repository.
+Ubuntu aims at providing a good compromise between long-term stability and ease of use. Since Ubuntu gets most of its packages from Debian's stable branch, it also has access to a very large software repository.
 
 **Key Facts**
 

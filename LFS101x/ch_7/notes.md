@@ -32,7 +32,7 @@ $ su Password:
 #
 ```
 
-2. Now, you need to create a configuration file to enable your user account to use `sudo`. Typically, this file is created in the `/etc/sudoers.d/` directory with the name of the file the same as your username. For example, for this demo, let’s say your username is **student**. After doing Step 1, you would then create the configuration file for **student** by doing this:
+2. Now, you need to create a configuration file to enable your user account to use `sudo`. Typically, this file is created in the `/etc/sudoers.d/` directory with the name of the file the same as your username. For example, for this demo, let's say your username is **student**. After doing Step 1, you would then create the configuration file for **student** by doing this:
 
 ```sh
 $ echo "student ALL=(ALL) ALL" > /etc/sudoers.d/student
@@ -94,7 +94,7 @@ When you first log into a system or open a terminal, the default directory shoul
 
 ## Exploring the Filesystem
 
-Traversing up and down the filesystem `tree` can get tedious. The `tree` command is a good way to get a bird’s-eye view of the filesystem tree. Use `tree -d` to view just the directories and to suppress listing file names.
+Traversing up and down the filesystem `tree` can get tedious. The `tree` command is a good way to get a bird's-eye view of the filesystem tree. Use `tree -d` to view just the directories and to suppress listing file names.
 
 ## Hard Links
 
@@ -208,7 +208,7 @@ $ do_something > output-file
 
 Because stderr is not the same as stdout, error messages will still be seen on the terminal windows in the above example.
 
-If you want to redirect stderr to a separate file, you use stderr’s file descriptor number (2), the greater-than sign (>), followed by the name of the file you want to hold everything the running command writes to stderr:
+If you want to redirect stderr to a separate file, you use stderr's file descriptor number (2), the greater-than sign (>), followed by the name of the file you want to hold everything the running command writes to stderr:
 
 ```sh
 $ do_something 2> error-file
@@ -326,7 +326,7 @@ Note the size here is in 512-byte blocks, by default; you can also specify bytes
 For example, to find files greater than 10 MB in size and running a command on those files:
 
 ```sh
-$ find / -size +10M -exec command {} ’;’
+$ find / -size +10M -exec command {} ';'
 ```
 
 ## Package Management Systems on Linux

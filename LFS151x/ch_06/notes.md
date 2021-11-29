@@ -65,7 +65,7 @@ The key components of the Kubernetes architecture are:
 * A system on which containers are scheduled to run in pods. The node runs a daemon called **kubelet** to communicate with the master node by reporting node status information and receiving instructions from the master about container lifecycle management (this daemon is also found on master nodes). **kube-proxy**, a network proxy running on all nodes, allows applications running in the cluster to be accessed from the external world.
 
 **Namespace**
-* The namespace allows us to logically partition the cluster into virtual sub-clusters, for projects, applications, users, and teams’ isolation.
+* The namespace allows us to logically partition the cluster into virtual sub-clusters, for projects, applications, users, and teams' isolation.
 
 ## The Kubernetes Architecture - Key Components (Part II)
 
@@ -82,7 +82,7 @@ The key API resources of the Kubernetes architecture:
 1. Create a Deployment to bring up a ReplicaSet and pods.
 2. Check the status of a Deployment to see if it succeeds or not.
 3. Later, update that Deployment to recreate the pods (to use a new image).
-4. Rollback to an earlier Deployment revision if the current Deployment isn’t stable.
+4. Rollback to an earlier Deployment revision if the current Deployment isn't stable.
 5. Pause and resume a Deployment. Below we provide a [sample deployment](http://kubernetes.io/docs/user-guide/deployments):
 
 ```yaml
@@ -134,7 +134,7 @@ spec:
 * Selectors enable us to group resources based on labels. In the above example, the **frontend** service will select all pods which have the labels **app==dockchat** and **tier==frontend**.
 
 **Volume**
-* The volume is an external filesystem or storage which is available to pods and is mounted on a container’s filesystem. They are built on top of [Docker volumes](https://docs.docker.com/userguide/dockervolumes).
+* The volume is an external filesystem or storage which is available to pods and is mounted on a container's filesystem. They are built on top of [Docker volumes](https://docs.docker.com/userguide/dockervolumes).
 
 ## Introduction to Apache Mesos
 
@@ -207,12 +207,12 @@ which would use 10 containers from the **hashicorp/web-frontend:latest** Docker 
 
 ## Introduction to Amazon ECS
 
-[Amazon Elastic Container Service](https://aws.amazon.com/ecs) is part of the Amazon Web Services (AWS) offerings. It provides a fast, secure, and highly scalable container management service that makes it easy to run, stop and manage Docker containers on a cluster. 
+[Amazon Elastic Container Service](https://aws.amazon.com/ecs) is part of the Amazon Web Services (AWS) offerings. It provides a fast, secure, and highly scalable container management service that makes it easy to run, stop and manage Docker containers on a cluster.
 
 It can be configured in the following two launch modes:
 
 **Fargate Launch Type**
-* AWS Fargate allows us to run containers without managing servers and clusters. In this mode, we just have to package our applications in containers along with CPU, memory, networking, and IAM policies. We don’t have to provision, configure, and scale clusters of virtual machines to run containers, as AWS will take care of it for us.
+* AWS Fargate allows us to run containers without managing servers and clusters. In this mode, we just have to package our applications in containers along with CPU, memory, networking, and IAM policies. We don't have to provision, configure, and scale clusters of virtual machines to run containers, as AWS will take care of it for us.
 
 ![Fargate Launch Type](./img/img_2.png)
 

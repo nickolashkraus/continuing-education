@@ -93,7 +93,7 @@ Some of the [volume types](https://kubernetes.io/docs/concepts/storage/persisten
 
 A [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#types-of-persistent-volumes) is a request for storage by a user. Users request for PV resources based on size, access modes, and volume type. Once a suitable PV is found, it is bound to PVC:
 
-After a successful bind, the PVC can be used in a Pod, to allow the containers’ access to the PV.
+After a successful bind, the PVC can be used in a Pod, to allow the containers' access to the PV.
 
 Once a user completed his/her tasks and the Pod is deleted, the PVC may be detached from the PV releasing it for possible future use. Keep in mind, however, that the PVC may be detached from the PV once all the Pods using the same PVC have completed their activities and have been deleted. Once released, the PV can be either deleted, retained, or recycled for future usage, all based on the [reclaim policy](https://kubernetes.io/docs/concepts/storage/persistent-volumes/#reclaim-policy) the user has configured on the PV.
 

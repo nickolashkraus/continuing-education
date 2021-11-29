@@ -97,7 +97,7 @@
 * Price: $0
 
 [**LFS151x - Introduction to Cloud Infrastructure Technologies**](https://training.linuxfoundation.org/training/introduction-to-cloud-infrastructure-technologies)
-* Description: Get a fundamental understanding of today’s top open source cloud technology options.
+* Description: Get a fundamental understanding of today's top open source cloud technology options.
 * Level: Beginner
 * Price: $0
 
@@ -322,7 +322,7 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 
 ### Linux Kernel Development
 
-[**LFD103 - Linux Kernel Development A Beginner’s Guide to Linux Kernel Development**](https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103)
+[**LFD103 - Linux Kernel Development A Beginner's Guide to Linux Kernel Development**](https://training.linuxfoundation.org/training/a-beginners-guide-to-linux-kernel-development-lfd103)
 * Description: Learn how to become a Linux kernel developer and contributor.
 * Level: Beginner
 * Price: $0
@@ -424,7 +424,7 @@ Learn about Helm, and how it's used in real-world scenarios to manage the lifecy
 * Level: Beginner
 * Price: $0
 
-[**LFD102 - A Beginner’s Guide to Open Source Software Development**](https://training.linuxfoundation.org/training/beginners-guide-open-source-software-development)
+[**LFD102 - A Beginner's Guide to Open Source Software Development**](https://training.linuxfoundation.org/training/beginners-guide-open-source-software-development)
 * Description: Learn the key concepts in developing open source software.
 * Level: Beginner
 * Price: $0

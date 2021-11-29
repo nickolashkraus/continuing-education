@@ -78,7 +78,7 @@ The On-Premise Solutions install Kubernetes on secure internal private clouds:
 
 ## Kubernetes Installation Tools/Resources
 
-While discussing installation configuration and the underlying infrastructure, let’s take a look at some useful installation tools available:
+While discussing installation configuration and the underlying infrastructure, let's take a look at some useful installation tools available:
 
 **kubeadm**
 [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm) is a first-class citizen on the Kubernetes ecosystem. It is a secure and recommended method to bootstrap a multi-node production ready Highly Available Kubernetes cluster, on-prem or in the cloud. Kubeadm can also bootstrap a single-node cluster for learning. It has a set of building blocks to setup the cluster, but it is easily extendable to add more features. Please note that [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm) does not support the provisioning of hosts.

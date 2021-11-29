@@ -35,7 +35,7 @@
 ![Kubernetes and Cloud Native Associate (KCNA)](./img/kcna.png)
 
 #### [Kubernetes and Cloud Native Associate (KCNA)](https://training.linuxfoundation.org/certification/kubernetes-cloud-native-associate)
-* Description: The Kubernetes and Cloud Native Associate (KCNA) exam demonstrates a user’s foundational knowledge and skills in Kubernetes and the wider cloud native ecosystem.
+* Description: The Kubernetes and Cloud Native Associate (KCNA) exam demonstrates a user's foundational knowledge and skills in Kubernetes and the wider cloud native ecosystem.
 * Level: Beginner
 * Price: $0
 
@@ -92,7 +92,7 @@
 ![Linux Foundation Certified IT Associate (LFCA)](./img/lfca.png)
 
 #### [Linux Foundation Certified IT Associate (LFCA)](https://training.linuxfoundation.org/certification/certified-it-associate)
-* Description: The Linux Foundation Certified IT Associate (LFCA) exam demonstrates a user’s expertise and skills in fundamental information technology functions, especially in cloud computing. It is ideal for those getting started in an IT career as an administrator/engineer.
+* Description: The Linux Foundation Certified IT Associate (LFCA) exam demonstrates a user's expertise and skills in fundamental information technology functions, especially in cloud computing. It is ideal for those getting started in an IT career as an administrator/engineer.
 * Level: $250
 * Price: Beginner
 
@@ -121,13 +121,13 @@
 ![OpenJS Node.js Services Developer (JSNSD)](./img/jsnsd.png)
 
 #### [OpenJS Node.js Services Developer (JSNSD)](https://training.linuxfoundation.org/certification/jsnsd)
-* Description: The OpenJS Node.js Services Developer (JSNSD) certification tests and verifies candidates’ skills in creating RESTful Node.js Servers and Services (or Microservices) with a particular emphasis on security practices.
+* Description: The OpenJS Node.js Services Developer (JSNSD) certification tests and verifies candidates' skills in creating RESTful Node.js Servers and Services (or Microservices) with a particular emphasis on security practices.
 * Level: Intermediate
 * Price: $375
 
 ![OpenJS Node.js Application Developer (JSNAD)](./img/jsnad.png)
 
 #### [OpenJS Node.js Application Developer (JSNAD)](https://training.linuxfoundation.org/certification/jsnad)
-* Description: The OpenJS Node.js Application Developer (JSNAD) certification tests and verifies candidates’ skills in using Node.js to create web-based applications.
+* Description: The OpenJS Node.js Application Developer (JSNAD) certification tests and verifies candidates' skills in using Node.js to create web-based applications.
 * Level: Intermediate
 * Price: $375
