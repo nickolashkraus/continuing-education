@@ -15,3 +15,4 @@
 - [x] Chapter 12: Tools for Cloud Infrastructure I (Configuration Management)
 - [x] Chapter 13: Tools for Cloud Infrastructure II (Build & Release)
 - [x] Chapter 14: Tools for Cloud Infrastructure III (Key-Value Pair Store)
+- [x] Chapter 15: Tools for Cloud Infrastructure IV (Image Building)
