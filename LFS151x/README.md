@@ -17,3 +17,4 @@
 - [x] Chapter 14: Tools for Cloud Infrastructure III (Key-Value Pair Store)
 - [x] Chapter 15: Tools for Cloud Infrastructure IV (Image Building)
 - [x] Chapter 16: Tools for Cloud Infrastructure V (Debugging, Logging, and Monitoring for Containerized Applications)
+- [x] Chapter 17: Service Mesh
