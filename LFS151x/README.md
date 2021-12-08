@@ -20,3 +20,4 @@
 - [x] Chapter 17: Service Mesh
 - [x] Chapter 18: Internet of Things (IoT)
 - [x] Chapter 19: Serverless Computing
+- [x] Chapter 20: Distributed Tracing
