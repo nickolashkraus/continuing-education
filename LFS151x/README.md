@@ -21,3 +21,4 @@
 - [x] Chapter 18: Internet of Things (IoT)
 - [x] Chapter 19: Serverless Computing
 - [x] Chapter 20: Distributed Tracing
+- [x] Chapter 21: How to Be Successful in the Cloud
