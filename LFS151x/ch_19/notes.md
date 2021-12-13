@@ -30,7 +30,7 @@ Key features and benefits of serverless computing include:
 * We only need to pay for a CPU time when our applications/functions are executed. There is no charge when code is not running. Also, there is no need to rent or purchase fixed quantities of servers.
 
 **Flexible Scaling**
-* We don’t need to set up or tune autoscaling. Applications are automatically scaled up/down based on demand.
+* We don't need to set up or tune autoscaling. Applications are automatically scaled up/down based on demand.
 
 **Automated High Availability and Fault Tolerance**
 * High availability and fault tolerance are automatically included by the underlying cloud infrastructure providers. Developers are not required to specifically program for such features.

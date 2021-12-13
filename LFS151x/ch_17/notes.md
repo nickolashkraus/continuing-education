@@ -67,7 +67,7 @@ There are many service mesh projects, which can be divided into two categories:
 
 [Consul](https://www.consul.io) by [HashiCorp](https://www.hashicorp.com) is an open source project aiming to provide a secure multi-cloud service networking through automated network configuration and service discovery.
 
-Consul’s strength lies in its support to connect services running in multiple datacenters. It is highly available for fault tolerance and increased performance, while it supports thousands or tens of thousands of simultaneous client services.
+Consul's strength lies in its support to connect services running in multiple datacenters. It is highly available for fault tolerance and increased performance, while it supports thousands or tens of thousands of simultaneous client services.
 
 Client services are capable of automatic discovery of servers, while a distributed agent and node failure detection supports scalability more than the traditional heartbeating schemes. Very low coupling between datacenters, together with failure detection, connection caching, and multiplexing ensures fast and reliable cross-datacenter requests.
 

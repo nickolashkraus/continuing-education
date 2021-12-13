@@ -5,7 +5,7 @@
 
 ## Introduction
 
-**Internet of Things** (**IoT**) is made of two terms *Internet* and *Things*. By *Internet*, we mean that the *Things* are connected. By *Things*, however, we don’t just mean the end devices, but also people and interconnected systems. Collecting, processing, analyzing data, and then taking action accordingly also comes under IoT.
+**Internet of Things** (**IoT**) is made of two terms *Internet* and *Things*. By *Internet*, we mean that the *Things* are connected. By *Things*, however, we don't just mean the end devices, but also people and interconnected systems. Collecting, processing, analyzing data, and then taking action accordingly also comes under IoT.
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Internet_of_things):
 
@@ -17,7 +17,7 @@ Looking at the trends, in the next few years, all of the devices would be IoT-en
 
 ## Network for IoT
 
-As there are so many IoT devices, the IPv4 network range cannot accommodate them. We need to use the IPv6 network to address those devices. These devices can be installed at remote locations; they can be continuous in motion, etc. Other than the traditional network, community and companies have built different network standards to fulfill these unique needs. Let’s list some of them, based on the network ranges:
+As there are so many IoT devices, the IPv4 network range cannot accommodate them. We need to use the IPv6 network to address those devices. These devices can be installed at remote locations; they can be continuous in motion, etc. Other than the traditional network, community and companies have built different network standards to fulfill these unique needs. Let's list some of them, based on the network ranges:
 
 **Short-range Wireless**
 * [Bluetooth mesh networking](https://en.wikipedia.org/wiki/Bluetooth_mesh_networking)

@@ -46,7 +46,7 @@ In the Cloud Native approach, we design a package and run applications on top of
 
 ## Tools
 
-We have already looked at Kubernetes in earlier chapters. Let’s now look at some of the tools that help us with CI/CD, which integrate well with Kubernetes for Cloud Native applications:
+We have already looked at Kubernetes in earlier chapters. Let's now look at some of the tools that help us with CI/CD, which integrate well with Kubernetes for Cloud Native applications:
 
 * [Helm](https://www.helm.sh) It is a popular package manager for Kubernetes. Helm packages Kubernetes applications into Charts, with all the artifacts, objects, and dependencies an entire application needs in order to successfully be deployed in a Kubernetes cluster. Using Helm Charts, which are stored in repositories, we can share, install, upgrade, or rollback an application that was built to run on Kubernetes. Helm is a graduated project of [CNCF](https://www.cncf.io).
 
