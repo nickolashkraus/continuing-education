@@ -7,3 +7,4 @@
 - [x] Chapter 4: Kubernetes Architecture
 - [x] Chapter 5: Installing Kubernetes
 - [x] Chapter 6: Minikube - A Local Kubernetes Cluster
+- [x] Chapter 7: Accessing Minikube
