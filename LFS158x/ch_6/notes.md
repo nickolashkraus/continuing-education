@@ -23,7 +23,7 @@ Below we outline the requirements to run Minikube on our local workstation:
 		* On macOS [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [HyperKit](https://github.com/moby/hyperkit), [VMware Fusion](http://www.vmware.com/products/fusion.html), [Parallels](https://minikube.sigs.k8s.io/docs/drivers/parallels) or Docker runtime
 		* On Windows [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v), or Docker runtime.
 
-**NOTE**: Minikube supports a [—driver=none](https://minikube.sigs.k8s.io/docs/drivers/none) (on Linux) option that runs the Kubernetes components directly on the host OS and not inside a VM. With this option a Docker installation is required and a Linux OS on the local workstation, but no hypervisor installation. If you use **—driver=none** in Debian or its derivatives, be sure to download [.deb Docker packages](https://www.docker.com/products/docker-desktop) instead of the snap package which does not work with Minikube. In addition to hypervisors, Minikube also supports a limited number of container runtimes, with the [—driver=docker](https://minikube.sigs.k8s.io/docs/drivers/docker) (on Linux, macOS, and Windows) and [—driver=podman](https://minikube.sigs.k8s.io/docs/drivers/podman) (on Linux) options, to install and run the Kubernetes cluster on top of a container runtime.
+**NOTE**: Minikube supports a [--driver=none](https://minikube.sigs.k8s.io/docs/drivers/none) (on Linux) option that runs the Kubernetes components directly on the host OS and not inside a VM. With this option a Docker installation is required and a Linux OS on the local workstation, but no hypervisor installation. If you use **—driver=none** in Debian or its derivatives, be sure to download [.deb Docker packages](https://www.docker.com/products/docker-desktop) instead of the snap package which does not work with Minikube. In addition to hypervisors, Minikube also supports a limited number of container runtimes, with the [—driver=docker](https://minikube.sigs.k8s.io/docs/drivers/docker) (on Linux, macOS, and Windows) and [—driver=podman](https://minikube.sigs.k8s.io/docs/drivers/podman) (on Linux) options, to install and run the Kubernetes cluster on top of a container runtime.
 
 * Internet connection at least on first Minikube run - to download packages, dependencies, updates and pull images needed to initialize the Minikube Kubernetes cluster. Subsequent runs will require an internet connection only when new Docker images need to be pulled from a container registry or when deployed containerized applications need it. Once an image has been pulled it can be reused without an internet connection.
 
@@ -68,7 +68,7 @@ According to the [CRI-O website](http://cri-o.io/),
 Start Minikube with CRI-O as container runtime, instead of Docker, with the following command:
 
 ```bash
-minikube start —container-runtime cri-o
+minikube start --container-runtime cri-o
 ```
 
 **NOTE**: While **docker** is the default runtime, minikube Kubernetes also supports **cri-o** and **containerd**.
