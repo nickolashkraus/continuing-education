@@ -8,7 +8,7 @@
 Important Linux documentation sources include:
 * The **man** pages (short for **man**ual pages)
 * **GNU Info**
-* The **help** command and **—help** option
+* The **help** command and **--help** option
 * Other documentation sources, e.g. [Gentoo Handbook](https://www.gentoo.org/support/documentation) or [Ubuntu Documentation](https://help.ubuntu.com/community/CommunityHelpWiki)
 
 ## The man pages
