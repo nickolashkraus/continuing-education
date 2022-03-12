@@ -8,3 +8,6 @@
 - [x] Chapter 5: Installing Kubernetes
 - [x] Chapter 6: Minikube - A Local Kubernetes Cluster
 - [x] Chapter 7: Accessing Minikube
+- [x] Chapter 8: Kubernetes Building Blocks
+- [x] Chapter 9: Authentication, Authorization, Admission Control
+- [x] Chapter 10: Services
