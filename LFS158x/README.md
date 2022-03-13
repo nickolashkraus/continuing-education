@@ -11,3 +11,4 @@
 - [x] Chapter 8: Kubernetes Building Blocks
 - [x] Chapter 9: Authentication, Authorization, Admission Control
 - [x] Chapter 10: Services
+- [x] Chapter 11: Deploying a Stand-Alone Application
