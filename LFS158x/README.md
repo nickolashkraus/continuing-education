@@ -12,3 +12,4 @@
 - [x] Chapter 9: Authentication, Authorization, Admission Control
 - [x] Chapter 10: Services
 - [x] Chapter 11: Deploying a Stand-Alone Application
+- [x] Chapter 12: Kubernetes Volume Management
