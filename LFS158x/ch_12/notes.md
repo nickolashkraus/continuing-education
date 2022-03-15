@@ -5,13 +5,13 @@
 
 ## Introduction
 
-In today’s business model, data is the most precious asset for many startups and enterprises. In a Kubernetes cluster, containers in Pods can be either data producers, data consumers, or both. While some container data is expected to be transient and is not expected to outlive a Pod, other forms of data must outlive the Pod in order to be aggregated and possibly loaded into analytics engines. Kubernetes must provide storage resources in order to provide data to be consumed by containers or to store data produced by containers. Kubernetes uses **Volumes** of several types and a few other forms of storage resources for container data management. In this chapter, we will talk about **PersistentVolume** and**PersistentVolumeClaim**objects, which help us attach persistent storage Volumes to Pods.
+In today's business model, data is the most precious asset for many startups and enterprises. In a Kubernetes cluster, containers in Pods can be either data producers, data consumers, or both. While some container data is expected to be transient and is not expected to outlive a Pod, other forms of data must outlive the Pod in order to be aggregated and possibly loaded into analytics engines. Kubernetes must provide storage resources in order to provide data to be consumed by containers or to store data produced by containers. Kubernetes uses **Volumes** of several types and a few other forms of storage resources for container data management. In this chapter, we will talk about **PersistentVolume** and**PersistentVolumeClaim**objects, which help us attach persistent storage Volumes to Pods.
 
 ## Volumes
 
 As we know, containers running in Pods are ephemeral in nature. All data stored inside a container is deleted if the container crashes. However, the **kubelet**will restart it with a clean slate, which means that it will not have any of the old data.
 
-To overcome this problem, Kubernetes uses [Volumes](https://kubernetes.io/docs/concepts/storage/volumes), storage abstractions that allow various storage technologies to be used by Kubernetes and offered to containers in Pods as storage media. A Volume is essentially a mount point on the container’s file system backed by a storage medium. The storage medium, content and access mode are determined by the Volume Type.
+To overcome this problem, Kubernetes uses [Volumes](https://kubernetes.io/docs/concepts/storage/volumes), storage abstractions that allow various storage technologies to be used by Kubernetes and offered to containers in Pods as storage media. A Volume is essentially a mount point on the container's file system backed by a storage medium. The storage medium, content and access mode are determined by the Volume Type.
 
 In Kubernetes, a Volume is linked to a Pod and can be shared among the containers of that Pod. Although the Volume has the same life span as the Pod, meaning that it is deleted together with the Pod, the Volume outlives the containers of the Pod - this allows data to be preserved across container restarts.
 
@@ -20,7 +20,7 @@ In Kubernetes, a Volume is linked to a Pod and can be shared among the container
 A directory which is mounted inside a Pod is backed by the underlying [Volume Type](https://kubernetes.io/docs/concepts/storage/volumes/#types-of-volumes). A Volume Type decides the properties of the directory, like size, content, default access modes, etc. Some examples of Volume Types are:
 
 **emptyDir**
-* An **empty** Volume is created for the Pod as soon as it is scheduled on the worker node. The Volume’s life is tightly coupled with the Pod. If the Pod is terminated, the content of **emptyDir** is deleted forever.
+* An **empty** Volume is created for the Pod as soon as it is scheduled on the worker node. The Volume's life is tightly coupled with the Pod. If the Pod is terminated, the content of **emptyDir** is deleted forever.
 
 **hostPath**
 * With the **hostPath** Volume Type, we can share a directory between the host and the Pod. If the Pod is terminated, the content of the Volume is still available on the host.
