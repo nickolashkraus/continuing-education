@@ -13,3 +13,4 @@
 - [x] Chapter 10: Services
 - [x] Chapter 11: Deploying a Stand-Alone Application
 - [x] Chapter 12: Kubernetes Volume Management
+- [x] Chapter 13: ConfigMaps and Secrets
