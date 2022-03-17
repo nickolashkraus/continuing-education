@@ -15,3 +15,4 @@
 - [x] Chapter 12: Kubernetes Volume Management
 - [x] Chapter 13: ConfigMaps and Secrets
 - [x] Chapter 14: Ingress
+- [x] Chapter 15: Advanced Topics
