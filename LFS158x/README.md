@@ -16,3 +16,4 @@
 - [x] Chapter 13: ConfigMaps and Secrets
 - [x] Chapter 14: Ingress
 - [x] Chapter 15: Advanced Topics
+- [x] Chapter 16: Kubernetes Community
