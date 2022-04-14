@@ -1,6 +1,6 @@
 # Continuing Education
 
-[![MIT License](https://img.shields.io/github/license/NickolasHKraus/continuing-education?color=blue)](https://github.com/NickolasHKraus/continuing-education/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/NickolasHKraus/continuing-education/blob/master/LICENSE)
 
 Notes from Linux Foundation courses
 
