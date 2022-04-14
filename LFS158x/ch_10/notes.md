@@ -9,7 +9,7 @@ Although the microservices driven architecture aims to decouple the components o
 
 In this chapter, we will learn about [Service](https://kubernetes.io/docs/concepts/services-networking/service) objects used to abstract the communication between cluster internal microservices, or with the external world. A Service offers a single DNS entry for a containerized application managed by the Kubernetes cluster, regardless of the number of replicas, by providing a common load balancing access point to a set of pods logically grouped and managed by a controller such as a Deployment, ReplicaSet, or DaemonSet.
 
-We will also learn about the **kube-proxy**daemon, which runs on each master and worker nodeto implement the services' configuration and to provide access to services. In addition we will discuss **service discovery**and **service types**, which decide the access scope of a service.
+We will also learn about the **kube-proxy** daemon, which runs on each master and worker node to implement the services' configuration and to provide access to services. In addition we will discuss **service discovery** and **service types**, which decide the access scope of a service.
 
 ## Connecting Users or Applications to Pods
 
@@ -55,11 +55,11 @@ The user/client now connects to a Service via its **ClusterIP**, which forwards 
 
 While the Service forwards traffic to Pods, we can select the **targetPort** on the Pod which receives the traffic. In our example, the **frontend-svc** Service receives requests from the user/client on **port:** **80** and then forwards these requests to one of the attached Pods on the **targetPort:** **5000**. If the **targetPort** is not defined explicitly, then traffic will be forwarded to Pods on the **port** on which the Service receives traffic. It is very important to ensure that the value of the **targetPort**, which is **5000** in this example, matches the value of the **containerPort** property of the Pod **spec** section.
 
-A logical set of a Pod’s IP address, along with the **targetPort** is referred to as a **Service endpoint**. In our example, the **frontend-svc** Service has 3 endpoints: **10.0.1.3:5000**, **10.0.1.4:5000**, and **10.0.1.5:5000**. Endpoints are created and managed automatically by the Service, not by the Kubernetes cluster administrator.
+A logical set of a Pod's IP address, along with the **targetPort** is referred to as a **Service endpoint**. In our example, the **frontend-svc** Service has 3 endpoints: **10.0.1.3:5000**, **10.0.1.4:5000**, and **10.0.1.5:5000**. Endpoints are created and managed automatically by the Service, not by the Kubernetes cluster administrator.
 
 ## kube-proxy
 
-Each cluster node runs a daemon called [kube-proxy](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies), that watches the API server on the master node for the addition, updates, and removal of Services and endpoints. **kube-proxy** is responsible for implementing the Service configuration on behalf of an administrator or developer, in order to enable traffic routing to an exposed application running in Pods. In the example below, for each new Service, on each node, **kube-proxy** configures **iptables** rules to capture the traffic for its **ClusterIP** and forwards it to one of the Service’s endpoints. Therefore any node can receive the external traffic and then route it internally in the cluster based on the **iptables** rules. When the Service is removed, **kube-proxy** removes the corresponding **iptables** rules on all nodes as well.
+Each cluster node runs a daemon called [kube-proxy](https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies), that watches the API server on the master node for the addition, updates, and removal of Services and endpoints. **kube-proxy** is responsible for implementing the Service configuration on behalf of an administrator or developer, in order to enable traffic routing to an exposed application running in Pods. In the example below, for each new Service, on each node, **kube-proxy** configures **iptables** rules to capture the traffic for its **ClusterIP** and forwards it to one of the Service's endpoints. Therefore any node can receive the external traffic and then route it internally in the cluster based on the **iptables** rules. When the Service is removed, **kube-proxy** removes the corresponding **iptables** rules on all nodes as well.
 
 ## Service Discovery
 
@@ -81,7 +81,7 @@ With this solution, we need to be careful while ordering our Services, as the Po
 **DNS**
 Kubernetes has an add-on for [DNS](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service), which creates a DNS record for each Service and its format is **my-svc.my-namespace.svc.cluster.local**.Services within the same Namespace find other Services just by their names. If we add a Service **redis-master** in **my-ns** Namespace, all Pods in the same **my-ns** Namespace lookup theService just by its name, **redis-master**. Pods from other Namespaces, such as **test-ns**, lookup the same Service by adding the respective Namespace as a suffix, such as **redis-master.my-ns** or providing the **FQDN** of the service as **redis-master.my-ns.svc.cluster.local**.
 
-This is the most common and highly recommended solution. For example, in the previous section’s image, we have seen that an internal DNS is configured, which maps our Services **frontend-svc**and**db-svc**to **172.17.0.4**and **172.17.0.5** IP addresses respectively.
+This is the most common and highly recommended solution. For example, in the previous section's image, we have seen that an internal DNS is configured, which maps our Services **frontend-svc**and**db-svc**to **172.17.0.4**and **172.17.0.5** IP addresses respectively.
 
 ## ServiceType
 
@@ -96,22 +96,22 @@ Access scope is decided by **ServiceType** property, defined when creating the S
 
 **ClusterIP** is the default [ServiceType](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport). A Service receives a Virtual IP address, known as its ClusterIP. This Virtual IP address is used for communicating with the Service and is accessible only from within the cluster.
 
-With the [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) *ServiceType*, in addition to a ClusterIP, a high-port, dynamically picked from the default range **30000-32767**, is mapped to the respective Service, from all the worker nodes. For example, if the mapped NodePort is **32233** for the service **frontend-svc**, then, if we connect to any worker node on port **32233**, the node would redirect all the traffic to the assigned ClusterIP -**172.17.0.4**. If we prefer a specific high-port number instead, then we can assign that high-port number to the NodePort from the default range when creating the Service.
+With the [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#nodeport) *ServiceType*, in addition to a ClusterIP, a high-port, dynamically picked from the default range **30000-32767**, is mapped to the respective Service, from all the worker nodes. For example, if the mapped NodePort is **32233** for the service **frontend-svc**, then, if we connect to any worker node on port **32233**, the node would redirect all the traffic to the assigned ClusterIP **172.17.0.4**. If we prefer a specific high-port number instead, then we can assign that high-port number to the NodePort from the default range when creating the Service.
 
-The **NodePort***ServiceType* is useful when we want to make our Services accessible from the external world. The end-user connects to any worker node on the specified high-port, which proxies the request internally to the ClusterIP of the Service, then the request is forwarded to the applications running inside the cluster. Let’s not forget that the Service is load balancing such requests, and only forwards the request to one of the Pods running the desired application. To manage access to multiple application Services from the external world, administrators can configure a reverse proxy - an ingress, and define rules that target specific Services within the cluster.
+The **NodePort** *ServiceType* is useful when we want to make our Services accessible from the external world. The end-user connects to any worker node on the specified high-port, which proxies the request internally to the ClusterIP of the Service, then the request is forwarded to the applications running inside the cluster. Let's not forget that the Service is load balancing such requests, and only forwards the request to one of the Pods running the desired application. To manage access to multiple application Services from the external world, administrators can configure a reverse proxy - an ingress, and define rules that target specific Services within the cluster.
 
 ## ServiceType: LoadBalancer
 
 With the [LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer) *ServiceType*:
 * NodePort and ClusterIP are automatically created, and the external load balancer will route to them
 * The Service is exposed at a static port on each worker node
-* The Service is exposed externally using the underlying cloud provider’s load balancer feature.
+* The Service is exposed externally using the underlying cloud provider's load balancer feature.
 
 The **LoadBalancer** *ServiceType* will only work if the underlying infrastructure supports the automatic creation of Load Balancers and have the respective support in Kubernetes, as is the case with the Google Cloud Platform and AWS. If no such feature is configured, the LoadBalancer IP address field is not populated, it remains in Pending state, but the Service will still work as a typical NodePort type Service.
 
 ## ServiceType: ExternalIP
 
-A Service can be mapped to an [ExternalIP](https://kubernetes.io/docs/concepts/services-networking/service/#external-ips) address if it can route to one or more of the worker nodes. Traffic that is ingressed into the cluster with the ExternalIP (as destination IP) on the Service port, gets routed to one of the Service endpoints. This type of service requires an external cloud provider such as Google Cloud Platform or AWS and a Load Balancer configured on the cloud provider’s infrastructure.
+A Service can be mapped to an [ExternalIP](https://kubernetes.io/docs/concepts/services-networking/service/#external-ips) address if it can route to one or more of the worker nodes. Traffic that is ingressed into the cluster with the ExternalIP (as destination IP) on the Service port, gets routed to one of the Service endpoints. This type of service requires an external cloud provider such as Google Cloud Platform or AWS and a Load Balancer configured on the cloud provider's infrastructure.
 
 Please note that ExternalIPs are not managed by Kubernetes. The cluster administrator has to configure the routing which maps the ExternalIP address to one of the nodes.
 

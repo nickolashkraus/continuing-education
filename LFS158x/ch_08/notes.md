@@ -5,7 +5,7 @@
 
 ## Introduction
 
-In this chapter, we will explore the **Kubernetes object model**and describe some of its fundamental building blocks, such as **Pods**, **ReplicaSets**, **Deployments**,**Namespaces**, etc. We will also discuss the essential role of **Labels**and **Selectors** in a microservices driven architecture as they logically group decoupled objects together.
+In this chapter, we will explore the **Kubernetes object model** and describe some of its fundamental building blocks, such as **Pods**, **ReplicaSets**, **Deployments**, **Namespaces**, etc. We will also discuss the essential role of **Labels** and **Selectors** in a microservices driven architecture as they logically group decoupled objects together.
 
 ## Kubernetes Object Model
 
@@ -63,7 +63,7 @@ From the Kubernetes documentation...
 >
 > As well as application containers, a Pod can contain [init containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers) that run during Pod startup. You can also inject [ephemeral containers](https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers) for debugging if your cluster offers this.
 >
-> **What is a Pod?(())
+> **What is a Pod?
 >
 > **Note**: While Kubernetes supports more container runtimes than just Docker, Docker is the most commonly known runtime, and it helps to describe Pods using some terminology from Docker.
 >
