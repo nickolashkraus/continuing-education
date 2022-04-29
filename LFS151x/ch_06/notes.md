@@ -95,9 +95,9 @@ metadata:
 spec:
   replicas: 3
     template:
-    metadata:
-      labels:
-        app: nginx
+      metadata:
+        labels:
+          app: nginx
     spec:
       containers:
       - name: nginx
