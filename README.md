@@ -1,8 +1,6 @@
 # Continuing Education
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/nickolashkraus/continuing-education/blob/master/LICENSE)
-
-Notes from Linux Foundation courses
+Notes from Linux Foundation courses.
 
 ## Curriculum
 
